@@ -20,7 +20,7 @@ class BalerPrinter:
     封装打包机的所有API操作
     """
 
-    def __init__(self, base_url="http://10.128.0.128:9000", send_data=None):
+    def __init__(self, base_url="http://10.130.60.35:9000", send_data=None):
         """
         初始化打包机操作类
 
@@ -30,10 +30,21 @@ class BalerPrinter:
         """
         self.base_url = base_url
         self.send_data = send_data or {
-            "ticket_info": {
-                "order_source": "Test_Data",
+             "ticket_info": {
+                "order_source": "美团",
+                "source_add": "某某大药房",
+                "source_phone": "123-4567-8900",
+                "order_parcels_num": "N",
+                "get_num": "10099",
+                "dem_num": "1/3",
                 "order_no": "601827061572981635",
-                "order_time": "2025-10-20 19:02:26"
+                "order_time": "2026-05-12 10:19:40",
+                "expected_delivery_time": "2026-05-12 10:19:40",
+                "store_name": "姓名姓名姓名",
+                "rec_phone": "***-****-1234",
+                "rec_fake_phone": "123-4567-8900(0000)",
+                "delivery_address": "某某省-某某市-某某区某某某某产业基地一号楼某某",
+                "buyer_message": "《临江仙·滚滚长江东逝水》"
             }
         }
     

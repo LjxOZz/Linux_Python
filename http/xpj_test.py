@@ -18,34 +18,39 @@ VOICE_MODE_MUTE = 1
 VOICE_MODE_PLAY = 2
 
 XP_PRINT_DATA = '''
-<IMG></IMG>
-<CB>**#8 美团**
-<L><N>--------------------------------
-<CB>--在线支付--
-<HB>芯烨云小票
-<L><N>下单时间:2019年09月06日15时35分
-订单编号:5842160392535156
-**************商品**************
-<C><HB>---1号口袋---
-<L><N>红焖猪手砂锅饭            x1 19
-牛肉                      x1 8
---------------------------------
-配送费:￥4
---------------------------------
-<B>小计:￥31
-折扣:￥4
-<L><N>********************************
-<B>订单总价:￥27
-
-<N>香洲花园 5栋6单元1404号
-肖(女士):135-4444-6666
-订单备注：[用餐人数]1人;
-少放辣椒
-<C><HB>**#8 完**
-<L><N>二维码打印测试
-<L><QRCODE s=6 e=L l=center>https://www.xpyun.net/open/index.html</QRCODE>
-<R><N>条形码打印测试
-<R><BARCODE t=CODE128 w=2 h=100 p=2>5842160392535156</BARCODE>
+<C>
+<BOLD>
+<B2>美团</B2>
+<B>漱玉平民大药房</B>
+</BOLD>
+<C>
+<BR>
+<L>
+<B><BOLD>商品详情:</BOLD></B>
+<N>
+货号: xxxxxx    <BOLD>货位: FXXXX</BOLD>
+品名: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+生产单位: xxxxxxxxxxxxxxxxxxxxxxx有限公司
+规格: 50ml
+<BOLD>数量: x   批号: XXXXXXXXX</BOLD>
+<BOLD>--------------------------------</BOLD>
+货号: xxxxxx    <BOLD>货位: FXXXX</BOLD>
+品名: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+生产单位: xxxxxxxxxxxxxxxxxxxxxxx有限公司
+规格: 5mg
+<BOLD>数量: x   批号: XXXXXXXXX</BOLD>
+<BOLD>--------------------------------</BOLD>
+</N>
+<B><BOLD>发票提取码:</BOLD></B>
+<N>
+2819xxxxxxxxxxxx
+发票提取码是获取发票的唯一凭证请妥善保管
+<BOLD>--------------------------------</BOLD>
+温馨提醒:如需发票请扫描下方二维码
+<QRCODE s=12 e=L l=center>这是一个二维码</QRCODE>
+-- 以上部分请放入打包袋内 --
+</N>
+</L>
 '''
 
 def get_common_params() -> dict:
