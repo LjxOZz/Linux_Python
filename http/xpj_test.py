@@ -4,7 +4,7 @@ import hashlib
 
 # 开发者配置（替换为自己的信息）
 USER = "1911342262@qq.com"  # 替换为实际用户邮箱
-USER_KEY = "eebc89e280ba47c5a12d6dc750348811"  # 替换为实际用户密钥
+USER_KEY = "xxx"  # 替换为实际用户密钥
 '''
 接口地址:
 '''
